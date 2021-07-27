@@ -1,1 +1,35 @@
 /* você pode estilizar se quiser !!! */
+body{
+    font-family: 'Roboto', sans-serif;
+   
+    background-color: #34a08ed8;
+}
+.divStyle{
+    margin-left: 15px;
+    width: 90%;
+}
+.titleStyle{
+    background-color: #008080;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-weight: 350;
+
+}
+.subTitle{
+    border-radius: 15px;
+    padding: 5px 0px 5px 10px;
+    text-align: left;
+    width: 50vw;
+    margin: 20px 0;
+    font-variant: small-caps;
+}
+.subTitle:hover{
+    background-color: #f5f5f5;
+    color: teal;
+    border-color: teal;
+}
