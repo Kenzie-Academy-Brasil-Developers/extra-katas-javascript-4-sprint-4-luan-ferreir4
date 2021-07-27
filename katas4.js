@@ -173,6 +173,166 @@ kata10();
 
 function kata11(){
     const titleKata11 = document.createElement("h3");
-    titleKata11.classList.add("titleStyle","subTitle")
+    titleKata11.classList.add("titleStyle","subTitle");
+    titleKata11.innerText = "Kata 11: Dead Marshes --> Deadest Marshes"
+
+    const divKata11 = document.createElement("div");
+    divKata11.classList.add("divStyle");
+
+    let newLotr = lotrCitiesArray.splice(5,1,"Deadest Marshes");
+    divKata11.textContent = JSON.stringify(lotrCitiesArray)
+
+    let output = showResults(titleKata11, divKata11);
+    return output;
 }
 kata11();
+
+function kata12(){
+    const titleKata12 = document.createElement("h3");
+    titleKata12.classList.add("titleStyle","subTitle");
+    titleKata12.innerText = "Kata 12: 14 primeiros caracteres de bestThing"
+
+    const divKata12 = document.createElement("div");
+    divKata12.classList.add("divStyle");
+
+    let newBest = bestThing.slice(0,14);
+    divKata12.textContent = JSON.stringify(newBest)
+
+    let output = showResults(titleKata12, divKata12);
+    return output;
+}
+kata12();
+
+function kata13(){
+    const titleKata13 = document.createElement("h3");
+    titleKata13.classList.add("titleStyle","subTitle");
+    titleKata13.innerText = "Kata 13: 12 últimos caracteres de bestThing"
+
+    const divKata13 = document.createElement("div");
+    divKata13.classList.add("divStyle");
+
+    let newBest = bestThing.slice(-12);
+    divKata13.textContent = JSON.stringify(newBest)
+
+    let output = showResults(titleKata13, divKata13);
+    return output;
+}
+kata13();
+
+function kata14(){
+    const titleKata14 = document.createElement("h3");
+    titleKata14.classList.add("titleStyle","subTitle");
+    titleKata14.innerText = "Kata 14: Caracteres de bestThing entre as posições 23 e 38"
+
+    const divKata14 = document.createElement("div");
+    divKata14.classList.add("divStyle");
+
+    let newBest = bestThing.slice(23, 38);
+    divKata14.textContent = JSON.stringify(newBest)
+
+    let output = showResults(titleKata14, divKata14);
+    return output;
+}
+kata14();
+
+function kata15(){
+    const titleKata15 = document.createElement("h3");
+    titleKata15.classList.add("titleStyle","subTitle");
+    titleKata15.innerText = "Kata 15: 12 últimos caracteres de bestThing usando .substring"
+
+    const divKata15 = document.createElement("div");
+    divKata15.classList.add("divStyle");
+
+    let newBest = bestThing.substring(bestThing.length -12);
+    divKata15.textContent = JSON.stringify(newBest)
+
+    let output = showResults(titleKata15, divKata15);
+    return output;
+}
+kata15();
+
+function kata16(){
+    const titleKata16 = document.createElement("h3");
+    titleKata16.classList.add("titleStyle","subTitle");
+    titleKata16.innerText = "Kata 16: Caracteres de bestThing entre as posições 23 e 38 usando .substring"
+
+    const divKata16 = document.createElement("div");
+    divKata16.classList.add("divStyle");
+
+    let newBest = bestThing.substring(23, 38);
+    divKata16.textContent = JSON.stringify(newBest)
+
+    let output = showResults(titleKata16, divKata16);
+    return output;
+}
+kata16();
+
+function kata17(){
+    const titleKata17 = document.createElement("h3");
+    titleKata17.classList.add("titleStyle","subTitle");
+    titleKata17.innerText = "Kata 17: removendo a cidade na última posição do array de LOTR"
+
+    const divKata17 = document.createElement("div");
+    divKata17.classList.add("divStyle");
+
+    lotrCitiesArray.pop();
+    divKata17.textContent = JSON.stringify(lotrCitiesArray);
+
+    let output = showResults(titleKata17,divKata17)
+    return output;
+    
+}
+kata17();
+
+function kata18(){
+    const titleKata18 = document.createElement("h3");
+    titleKata18.classList.add("titleStyle","subTitle");
+    titleKata18.innerText = "Kata 18: readicionando a cidade na última posição do array de LOTR"
+
+    const divKata18 = document.createElement("div");
+    divKata18.classList.add("divStyle");
+
+    lotrCitiesArray.push('Deadest Marshes');
+    divKata18.textContent = JSON.stringify(lotrCitiesArray);
+
+    let output = showResults(titleKata18,divKata18)
+    return output;
+    
+}
+kata18();
+
+function kata19(){
+    const titleKata19 = document.createElement("h3");
+    titleKata19.classList.add("titleStyle","subTitle");
+    titleKata19.innerText = "Kata 19: retirando a primeira cidade do array de LOTR"
+
+    const divKata19 = document.createElement("div");
+    divKata19.classList.add("divStyle");
+
+    lotrCitiesArray.shift();
+    divKata19.textContent = JSON.stringify(lotrCitiesArray);
+
+    let output = showResults(titleKata19,divKata19)
+    return output;
+    
+}
+kata19();
+
+function kata20(){
+    const titleKata20 = document.createElement("h3");
+    titleKata20.classList.add("titleStyle","subTitle");
+    titleKata20.innerText = "Kata 20: readicionando a primeira cidade do array de LOTR"
+
+    const divKata20 = document.createElement("div");
+    divKata20.classList.add("divStyle");
+
+    lotrCitiesArray.unshift('Mordor');
+    divKata20.textContent = JSON.stringify(lotrCitiesArray);
+
+    let output = showResults(titleKata20,divKata20)
+    return output;
+    
+}
+kata20();
+
+// I will come back later to make the bonus
